@@ -7,7 +7,6 @@ public class Exit : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            Debug.Log(1);
             GameObject.Find("SceneLevelManager").GetComponent<ChangeScene>().SceneToChangeTo(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
