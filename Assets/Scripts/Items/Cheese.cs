@@ -9,7 +9,7 @@ public class Cheese : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             MusicManager.setLoop(false);
-            MusicManager.setVolume(0.25f);
+            MusicManager.setVolume(0.4f);
             MusicManager.play(pickupSound);
             ItemValue.AddCheese();
             Destroy(gameObject);
