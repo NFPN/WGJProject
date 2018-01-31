@@ -1,19 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class ItemValue : MonoBehaviour
 {
-    public int cheeseValue = 0;
     public Text cheeseText;
 
     void Start()
     {
         cheeseText = GameObject.Find("CheeseValueText").GetComponent<Text>();
 
-        if(SceneManager.GetActiveScene().name == "3_Level1")
+        if(SceneManager.GetActiveScene().name == "3_level1")
         {
             PlayerPrefs.SetInt("CheeseValue", 0);
             PlayerPrefs.Save();
